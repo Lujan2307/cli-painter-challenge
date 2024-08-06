@@ -19,4 +19,7 @@ class Circle:
         return Area
 
     def Draw(self):
-        circle = plt.Circle((self.center.x, self.center.y), self.radius, color="r")
+        circle = plt.Circle( xy: (self.center.x, self.center.y), self.radius, color="r")
+        plt.gca().add_patch(circle)
+        plt.axis("scaled")
+        plt.show()
